@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@mini-app/shared": ["../../packages/shared/src/index.ts"]
+    },
+    "noEmit": true
+  },
+  "include": ["src", "vite.config.ts"]
+}
